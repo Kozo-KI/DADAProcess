@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(python tools/dada_check.py:*)",
+      "Bash(python3 tools/dada_check.py:*)",
+      "Bash(py -3 tools/dada_check.py:*)",
+      "Bash(python tools/agent_def_check.py:*)",
+      "Bash(python3 tools/agent_def_check.py:*)",
+      "Bash(py -3 tools/agent_def_check.py:*)",
+      "Bash(python --version)",
+      "Bash(python3 --version)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Bash(git push:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": false
+}
